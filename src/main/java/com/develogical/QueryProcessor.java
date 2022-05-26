@@ -15,7 +15,7 @@ public class QueryProcessor {
             //67388ba0:%20what%20is%2018%20plus%2014
             String[] split_query = query.split("%20");
             int result = Integer.parseInt(split_query[3]) + Integer.parseInt(split_query[5]);
-            return result;
+            return String.valueOf(result);
         }
         return "";
     }
